@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayaka Kitamura Official | 旅するアナウンサー</title>
+  <meta name="description" content="旅と写真をテーマにしたアナウンサー公式サイトのサンプルです。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-main">Ayaka Kitamura</span>
+        <span class="brand-sub">Official Site</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">☰</button>
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html#profile">Profile</a>
+        <a href="works.html">Works</a>
+        <a href="works-history.html">History</a>
+        <a href="voice-sample.html">Voice</a>
+        <a href="photo.html">Photo</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Announcer · Traveler · Photographer</p>
+          <h1>撮って、旅して、<br>言葉でつなぐ。</h1>
+          <p class="lead">
+            福島を拠点に、旅・地域・文化をテーマに発信するアナウンサーの
+            公式ポートフォリオサイトです。
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="works.html">実績を見る</a>
+            <a class="btn ghost" href="#contact">お問い合わせ</a>
+          </div>
+          <div class="socials">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="YouTube">YouTube</a>
+            <a href="#" aria-label="X">X</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?auto=format&fit=crop&w=900&q=80" alt="旅先で撮影する人物" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="profile">
+      <div class="container split">
+        <img class="portrait" src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=900&q=80" alt="プロフィール写真" />
+        <div>
+          <h2>Profile</h2>
+          <p>
+            北村彩花（きたむら あやか）<br>
+            旅と写真をライフワークに、地域の魅力をことばで届けるアナウンサー。
+            番組MC・ナレーション・イベント司会など幅広く対応しています。
+          </p>
+          <p>
+            「初めての人にも届く、温度のある言葉」を大切に、
+            1つひとつの現場と真摯に向き合っています。
+          </p>
+          <a class="text-link" href="works-history.html">経歴を詳しく見る →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Latest Works</h2>
+          <a class="text-link" href="works.html">すべて見る →</a>
+        </div>
+        <div class="cards three">
+          <article class="card">
+            <span class="chip">TV</span>
+            <h3>地域情報番組 MC</h3>
+            <p>福島県内の観光・食・人にフォーカスした週末情報番組。</p>
+          </article>
+          <article class="card">
+            <span class="chip">Event</span>
+            <h3>観光フェス 司会</h3>
+            <p>自治体主催イベントでの進行・ステージMCを担当。</p>
+          </article>
+          <article class="card">
+            <span class="chip">Narration</span>
+            <h3>企業VP ナレーション</h3>
+            <p>採用・ブランディング向け映像のナレーション収録。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container narrow">
+        <h2>Contact</h2>
+        <p class="center muted">
+          ご相談・ご依頼は下記フォームからご連絡ください。<br>
+          スケジュール・内容・ご予算の記載をお願いします。
+        </p>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <label>会社名
+            <input type="text" name="company" autocomplete="organization" />
+          </label>
+          <label>お名前 <span class="required">*</span>
+            <input type="text" name="name" required autocomplete="name" />
+          </label>
+          <label>メールアドレス <span class="required">*</span>
+            <input type="email" name="email" required autocomplete="email" />
+          </label>
+          <label>電話番号
+            <input type="tel" name="phone" autocomplete="tel" />
+          </label>
+          <label>お問い合わせ内容 <span class="required">*</span>
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+          <p class="form-note">※このデモでは送信処理は行わず、入力チェックのみ実装しています。</p>
+          <button type="submit" class="btn primary block">送信する</button>
+          <p class="form-result" id="formResult" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-grid">
+      <p>© 2026 Ayaka Kitamura Official Site</p>
+      <div class="foot-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="#top">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
