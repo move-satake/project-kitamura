@@ -243,6 +243,11 @@ h2 {
   color: white;
 }
 
+.btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
 .btn.ghost {
   border-color: #ccd5f5;
   background: white;

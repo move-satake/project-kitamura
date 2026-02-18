@@ -108,7 +108,7 @@
           スケジュール・内容・ご予算の記載をお願いします。
         </p>
 
-        <form id="contactForm" class="contact-form" novalidate>
+        <form id="contactForm" class="contact-form" novalidate data-endpoint="https://formspree.io/f/your_form_id">
           <label>会社名
             <input type="text" name="company" autocomplete="organization" />
           </label>
@@ -124,7 +124,7 @@
           <label>お問い合わせ内容 <span class="required">*</span>
             <textarea name="message" rows="6" required></textarea>
           </label>
-          <p class="form-note">※このデモでは送信処理は行わず、入力チェックのみ実装しています。</p>
+          <p class="form-note">※送信先はフォームタグの data-endpoint（script.jsで参照）を実運用URLに変更してください。</p>
           <button type="submit" class="btn primary block">送信する</button>
           <p class="form-result" id="formResult" aria-live="polite"></p>
         </form>
